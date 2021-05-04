@@ -1,3 +1,79 @@
-双标签分为：包含关系和并列关系
-<html></html>
+根据学习进度整理，可结合具体网页回顾
+
+1.HTML:Hyper Text Markup Language
+
+2.Web标准的构成：
+1）结构Structure：对网页元素进行整理和分类 html
+2）表现Presentation：设置网页元素的版式、颜色、大小、外观等样式 CSS
+3)行为Behavior：网页模型的定义及交互的编写 JavaScript
+
+3.标签
+双标签分为：包含关系和并列关系<html></html>
 单标签<br />
+
+<h1>标题标签<h1> h1~h6
+<p>段落标签<p>
+换行标签<br />
+布局标签：<div>(division)   <span>
+
+文本格式化标签：
+1）<strong>加粗</strong>    <b>加粗</b>
+2)<em>倾斜</em>             <i>倾斜</i>
+3)<del>删除线</del>         <s>删除线</s> 
+4)<ins>下划线</ins>         <u>下划线</u>
+
+图像标签：
+<img src="..." alt="..." title="..." width="300" height="400" border="10">
+src：图像路径  
+alt：图像无法加载，显示的文字
+title：图像提示问题
+width：图像宽度 
+height：图像高度 
+border：图像边框粗细
+相对路径：同一级直接写图片名 src="1.jpg"   下一级  images/1.jpg   上一级  ../images/1.jpg
+绝对路径：本地地址C:\A\1.jpg，较少使用     完整网络地址 http://www.123.com/a.jpg
+
+超链接标签：<a href="..." target="...">
+href="https://www.123...." 必须是http或者https开头网址！
+target="目标地址的弹出方式" _self默认方式，当前页打开网页     _blank 新建窗口打开网页
+外部链接
+内部链接
+空链接
+下载链接
+元素链接
+锚点链接
+
+4.注释：<!--...--> 快捷键 ctrl+/
+常用特殊字符：
+ 空格符 &nbsp;
+<小于号 &lt;
+>大于号 &gt;
+&和号   &amp;
+...
+
+5.表格标签
+表格相关属性 <table></table> <thead></thead> <tr></tr> <th></th> <tbody></tbody> <td></td>
+align : left center right
+border : 1或者"" 默认""，无边框。1有边框
+cellpadding ：像素值，单元格边沿与其内容之间的空白，默认1像素
+cellspacing ：像素值，单元格之间的空白，默认2像素
+width ：像素或者百分比，表格的宽度
+
+合并单元格
+跨行合并：rowspan="合并个数"
+跨列合并：colspan="合并个数"
+跨行：最上侧单元格为目标单元格
+跨列：最左侧单元格为目标单元格
+注意：写完合并单元格后，后续行的单元格<td></td>要减少
+
+表单域 <form action="提交地址url" method="提交方式GET/POST" name="表单名称">各种单元控件</form>
+表单元素：
+<input type="xxx"> text password radio checkbox submit reset button file
+单选按钮radio实现单选需要name相同，默认选中需要加上checked
+Label标签：
+<label for="xxx">...<input type="text" id="xxx"></label>
+下拉框：
+<select><option></option></select> 默认选中需要加上selected
+文本域
+<textarea col="30" row="2"></textarea>  col一行的字符数 row行数
+

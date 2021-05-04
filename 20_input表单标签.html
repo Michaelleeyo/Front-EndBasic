@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input标签</title>
+</head>
+<body>
+    <form action="xxx.php" method="POST" name="name1">
+        <!-- text文本框 可以输入任何内容 -->
+        用户名： <input type="text" name="username" value="请输入用户名" max="300"> <br>
+        <!-- password密码框 用户看不见输入密码 -->
+        密  码： <input type="password" name="pwd"> <br>
+        <!-- radio 单选按钮可以实现多选一 -->
+        <!-- name 表单的名字 这里性别按钮必须name相同，才能实现多选一 -->
+        <!-- checked第一次加载默认选中 -->
+        性  别： 男<input type="radio" name="sex" value="男" checked> 女 <input type="radio" name="sex" value="女">  <br>
+        <!-- checkbox 复选框 -->
+        爱  好：吃饭 <input type="checkbox" name="hobby" value="吃饭"> 
+        睡觉 <input type="checkbox" name="hobby" value="睡觉"> 
+        打游戏 <input type="checkbox" name="hobby" value="打游戏"> <br>
+        <!-- submit 提交按钮 -->
+        <input type="submit" value="免费注册"> <br>
+        <!-- reset 重置按钮 清除数据 -->
+        <input type="reset" value="清除表单"> <br>
+        <!-- button 普通按钮 结合JS -->
+        <input type="button" value="发送短信"> <br>
+        <!-- file 上传文件按钮 -->
+        上传文件： <input type="file">
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的综合应用</title>
+</head>
+<body>
+    <form action="xxx.com" method="POST" name="zhinfo">
+        <h3>青春永驻</h3>
+        性别 
+        <label for="man">男：</label> <input type="radio" name="sex" id="man">
+        <label for="female">女：</label> <input type="radio" name="sex" id="female"> <br>
+        生日 
+        <select aria-valuetext="请选择年">
+            <option>1997</option>
+            <option selected>1996</option>
+            <option>1998</option>
+        </select>
+        <select aria-valuetext="请选择月">
+            <option>5</option>
+            <option selected>6</option>
+            <option>7</option>
+        </select>
+        <select aria-valuetext="请选择日">
+        <option>20</option>
+        <option>25</option>
+        <option selected>30</option>
+        </select> <br>
+        所在地区
+        <input type="text" value="北京思密达" maxlength="30"> <br>
+        婚姻状况
+        <input type="radio" name="hunyin" id="unmarried"><label for="unmarried">未婚</label>
+        <input type="radio" name="hunyin" id="married" checked><label for="married">已婚</label>
+        <input type="radio" name="hunyin" id="divorce"><label for="divorce">离婚</label> <br>
+        学历
+        <input type="text" value="幼儿园" maxlength="3"> <br>
+        喜欢的类型
+        <input type="checkbox">妩媚的 
+        <input type="checkbox">可爱的 
+        <input type="checkbox">小鲜肉 
+        <input type="checkbox">老腊肉
+        <input type="checkbox">都喜欢 <br>
+        自我介绍
+        <textarea name="zwjs" id="zwjs" cols="30" rows="2">自我介绍</textarea> <br>
+        <input type="submit" value="免费注册"> <br>
+        <input type="checkbox" id="ty" checked> <label for="ty">我同意注册条款和会员加入标准</label>  <br>
+        <p> <a href="https://www.baidu.com" target="_blank"><ins>我是会员，立即登录</ins></a> </p> <br>
+        <h3>我承诺</h3>
+        <ul>
+            <li>年满18岁、单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚寻找另一半</li>
+        </ul>
+    </form>
+</body>
+</html>
