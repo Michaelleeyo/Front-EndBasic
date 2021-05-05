@@ -66,6 +66,13 @@ width ：像素或者百分比，表格的宽度
 跨列：最左侧单元格为目标单元格
 注意：写完合并单元格后，后续行的单元格<td></td>要减少
 
+无序列表
+<ul> <li></li></ul> ul内只能放li，li里可以放其他元素
+有序列表
+<ol><li></li></ol> 
+自定义列表
+<dl><dt></dt><dd></dd></dl>
+
 表单域 <form action="提交地址url" method="提交方式GET/POST" name="表单名称">各种单元控件</form>
 表单元素：
 <input type="xxx"> text password radio checkbox submit reset button file
