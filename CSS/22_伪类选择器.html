@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 未访问的连接 a:link */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 访问过的 */
+        a:visited {
+            color: blue;
+        }
+
+        /* 鼠标经过 */
+        a:hover {
+            color: red;
+        }
+
+        /* 鼠标按下未弹起 */
+        a:active {
+            color: yellow;
+        }
+
+        /* 获得光标的元素 */
+        input:focus {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">hhh</a> <br>
+    <a href="#">123123</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>
